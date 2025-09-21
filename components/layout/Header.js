@@ -161,7 +161,10 @@ const Header = () => {
               {item.name}
             </Link>
           ))}
+          <LoginButton />
         </nav>
+
+
       </div>
     </div>
   )
