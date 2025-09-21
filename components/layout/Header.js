@@ -94,13 +94,15 @@ const Header = () => {
     <div className="fixed z-50 inset-x-0 top-0 border-b border-[#2A2A2A] backdrop-blur-[24px] bg-[var(--header)]">
       <div className="w-[90%] py-4 mx-auto flex items-center justify-between">
         <div className="flex items-center w-1/2 justify-between gap-8">
-          <Image
-            width={235}
-            height={60}
-            src={logo}
-            alt="Logo"
-            className="lg:w-[235px] lg:h-[60px] w-[180px] h-[45px]"
-          />
+          <Link href="/" className='inline-block'>
+            <Image
+              width={235}
+              height={60}
+              src={logo}
+              alt="Logo"
+              className="lg:w-[235px] lg:h-[60px] w-[180px] h-[45px] shrink-0"
+            />
+          </Link>
           <nav className="hidden lg:flex items-center gap-4">
             {navigation.map((item) => (
               <Link
@@ -130,13 +132,15 @@ const Header = () => {
           ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         <div className="flex items-center justify-between w-[90%] mx-auto py-4">
-          <Image
-            width={180}
-            height={45}
-            src={logo}
-            alt="Logo"
-            className="w-[180px] h-[45px]"
-          />
+          <Link onClick={() => setMenuOpen(false)} href="/" className='inline-block'>
+            <Image
+              width={180}
+              height={45}
+              src={logo}
+              alt="Logo"
+              className="w-[180px] h-[45px]"
+            />
+          </Link>
           <button onClick={() => setMenuOpen(false)}>
             <IoMdClose color="#f0e74d" size={30} />
           </button>
