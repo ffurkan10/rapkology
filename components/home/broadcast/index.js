@@ -40,12 +40,12 @@ const Broadcast = () => {
       </div>
 
       <div className="order-2 lg:order-none flex flex-row justify-between lg:justify-start gap-6 relative z-10 mt-6 lg:mt-0">
-        <Image src={white} alt="white" className="block lg:hidden " />
-        <Image src={women} alt="women" />
+          <Image src={white} alt="white" className="block lg:hidden max-w-auto max-h-auto" />
+          <Image src={women} alt="women" className="max-w-auto max-h-auto" />
       </div>
 
-      <div className="absolute bottom-0 right-0 z-0">
-        <Image src={viewers} alt="viewers" />
+      <div className="absolute bottom-0 right-0 left-0 w-full z-0">
+        <Image src={viewers} alt="viewers" className="w-full h-full object-cover" />
       </div>
     </div>
   )

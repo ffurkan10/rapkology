@@ -29,7 +29,7 @@ const Page = () => {
 
       </div>
 
-      <div className='relative w-full '>
+      <div className='relative w-full pt-10'>
         <Broadcast />
 
         <div className="absolute bottom-0 left-0 w-full pointer-events-none z-40">
