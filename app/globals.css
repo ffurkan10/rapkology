@@ -19,8 +19,6 @@
 
 body {
   background: var(--dark);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .swiper-pagination-bullet {
