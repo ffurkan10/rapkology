@@ -1,0 +1,34 @@
+import Image from 'next/image'
+import React from 'react'
+import trendPerson from "../../../public/images/png/trend-person.png"
+import moment from 'moment'
+import Link from 'next/link'
+import "moment/locale/tr";
+
+const HomeBlogCard = ({ blog }) => {
+
+  return (
+    <div className='flex flex-col sm:flex-row sm:items-center gap-6'>
+        <div className='flex flex-col gap-3 '>
+            <div className='w-full h-auto sm:w-[300px] sm:h-[200px]'>
+                <Image src={blog?.attributes?.img} alt={blog.attributes.title} width={300} height={200} className='w-full h-full' />
+            </div>
+            <p className='text-[#3B3B3B]'>{moment(blog.createdAt).format('LL')}</p>
+        </div>
+        <div className='flex flex-col'>
+            <div className='flex flex-col gap-4 border-b border-b-[#3B3B3B] sm:h-[200px] sm:pb-0 pb-4'>
+                <div className='flex items-center gap-3'>
+                    <div className='w-[35px] h-[35px]'>
+                        <Image src={trendPerson} alt={blog.attributes.title} width={35} height={35} className='w-full h-full rounded-lg' />
+                    </div>
+                    <p className='text-white'>{blog.attributes?.authors[0]}</p>
+                </div>
+                <p className='text-white text-md font-bold line-clamp-4'>{blog.attributes?.desc}</p>
+            </div>
+            <Link href={`/blog/${blog.attributes?.slug}`} className='text-white font-normal pt-4 block flex align-center justify-center'>Daha Fazla Oku</Link>
+        </div>
+    </div>
+  )
+}
+
+export default HomeBlogCard
