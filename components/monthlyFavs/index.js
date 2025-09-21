@@ -16,7 +16,7 @@ const MonthlyFavs = () => {
             </div>
         </div>
 
-        <div className='flex flex-col lg:flex-row align-center w-[90%] mx-auto lg:w-[95%] lg:ml-auto h-[350px]'>
+        <div className='flex flex-col lg:flex-row align-center w-[90%] mx-auto lg:w-[95%] lg:ml-auto lg:mr-0 h-[350px]'>
             <h2 className='text-[40px] lg:text-[50px] font-bold text-white pt-20 leading-[1.2] text-center lg:text-left'>AYIN<br/> FAVORİLERİ</h2>
 
             <Favorites />
