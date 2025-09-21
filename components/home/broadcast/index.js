@@ -93,7 +93,7 @@ const Broadcast = () => {
 
       <div className="order-2 lg:order-none flex flex-row justify-between lg:justify-start gap-6 relative z-10 mt-6 lg:mt-0">
         <Image src={white} alt="white" className="block lg:hidden " />
-        <Image src={women} alt="women" className='' />
+        <Image src={women} alt="women" />
       </div>
 
       <div className="absolute bottom-0 right-0 z-0">

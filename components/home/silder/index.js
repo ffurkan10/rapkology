@@ -18,7 +18,7 @@ export default function Slider() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsLarge(window.innerWidth >= 1024);
+      setIsLarge(window.innerWidth >= 850);
     };
     handleResize(); 
     window.addEventListener("resize", handleResize);
@@ -30,7 +30,6 @@ export default function Slider() {
     const item = sliderData[0];
     return (
       <div className="relative w-full h-[90vh] flex">
-        {/* Görsel */}
         <div className="relative w-full h-full">
           <Image
             src={item.image}
@@ -40,7 +39,6 @@ export default function Slider() {
           />
         </div>
 
-        {/* Sağ taraf */}
         <div
           className="
             absolute w-[90%] mx-auto text-center
@@ -98,7 +96,6 @@ export default function Slider() {
       {sliderData.map((item, idx) => (
         <SwiperSlide key={idx}>
           <div className="relative w-full h-full flex">
-            {/* Görsel */}
             <div className="relative w-full h-full">
               <Image
                 src={item.image}
@@ -110,7 +107,6 @@ export default function Slider() {
               />
             </div>
 
-            {/* Sağ taraf */}
             <div
               className="
               absolute
