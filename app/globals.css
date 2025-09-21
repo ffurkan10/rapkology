@@ -47,12 +47,12 @@ body {
   width: 80% !important;
   margin: 0 auto !important;
 
-  position: absolute !important; /* tekrar absolute yapıyoruz */
-  bottom: 0 !important;       /* container içinde alta sabitle */
+  position: absolute !important; 
+  bottom: 0 !important;       
   left: 10% !important;
   transform: translateX(-50%);
   top: auto !important;
-  z-index: 50 !important;        /* kartların üstünde olsun */
+  z-index: 50 !important;      
 }
 .swiper-pagination-progressbar-fill {
   background: #facc15 !important;
