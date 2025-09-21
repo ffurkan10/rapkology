@@ -28,8 +28,8 @@ const BlogHeroContent = () => {
                 <div className='flex flex-col lg:w-1/2 w-full gap-6'>
                     <div className='relative w-full md:h-[400px] h-[300px]'>
                         <Image src={heroImg} alt="heroImg" fill className='object-cover' />
-                        <p className='absolute md:bottom-10 md:left-10 bottom-5 left-5 p-4 text-white xl:text-[40px] text-[30px] font-bold'>LOREM FT - IPSUM</p>
-                        <Image src={play} alt="play" width={70} height={70} className='absolute md:bottom-5 bottom-0 md:right-10 md:w-[50px] md:h-[60px] right-5 -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-110 transition-transform' />
+                        <p className='absolute md:bottom-10 md:left-10 bottom-2 left-2 p-4 text-white xl:text-[40px] text-[30px] font-bold'>LOREM FT - IPSUM</p>
+                        <Image src={play} alt="play" width={70} height={70} className='absolute md:bottom-5 md:right-10 bottom-0 w-[50px] h-[50px] md:w-[70px] md:h-[70px] right-2 -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-110 transition-transform' />
                     </div>
 
                     <p className='xl:text-[25px] text-[20px] font-bold leading-tight relative'>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.  Mauris nec leo non libero sodales lobortis. Quisque a neque preti ...</p>
@@ -42,7 +42,7 @@ const BlogHeroContent = () => {
                                 <Image src={item.img} alt={item.title} width={175} height={105} className='object-contain' />
                             </div>
                             <div>
-                                <h3 className='xl:text-[25px] text-[20px] font-bold leading-tight'>{item.title}</h3>
+                                <h3 className='xl:text-[25px] text-[20px] line-clamp-3 font-bold leading-tight'>{item.title}</h3>
                             </div>
                         </div>
                     ))}

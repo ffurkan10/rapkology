@@ -29,7 +29,7 @@ export default function Slider() {
   if (!isLarge) {
     const item = sliderData[0];
     return (
-      <div className="relative w-full h-screen flex">
+      <div className="relative w-full h-[90vh] flex">
         {/* Görsel */}
         <div className="relative w-full h-full">
           <Image

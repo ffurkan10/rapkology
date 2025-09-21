@@ -15,13 +15,13 @@ const Explore = () => {
       <div className='flex items-center justify-between  mb-10'>
         <div className='flex items-center gap-6'>
           <h2 className='text-[40px] lg:text-[50px] font-bold text-white'>Keşfet</h2>
-          <Image src={explore} alt="Explore" />
+          <Image src={explore} alt="Explore" width={50} height={50} className='lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]' />
         </div>
 
         <div className='flex items-center gap-4'>
-          <Image src={search} alt="Search" />
-          <Image src={hamburger} alt="Hamburger" />
-          <Image src={grid} alt="Grid" />
+          <Image src={search} alt="Search" width={23} height={22} />
+          <Image src={hamburger} alt="Hamburger" width={24} height={19} />
+          <Image src={grid} alt="Grid" width={23} height={19} />
         </div>
       </div>
 

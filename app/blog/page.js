@@ -49,9 +49,9 @@ const Blog = () => {
           </div>
   
           <div className='flex items-center gap-4'>
-            <Image src={search} alt="Search" />
-            <Image src={hamburger} alt="Hamburger" />
-            <Image src={grid} alt="Grid" />
+              <Image src={search} alt="Search" width={23} height={22} />
+              <Image src={hamburger} alt="Hamburger" width={24} height={19} />
+              <Image src={grid} alt="Grid" width={23} height={19} />
           </div>
         </div>
 
