@@ -1,10 +1,10 @@
 import React from 'react'
-import bg from "../../public/images/blog/blog-hero-bg.png"
-import style from "../../public/images/blog/style.png"
+import bg from "../../public/images/png/blog/blog-hero-bg.png"
+import style from "../../public/images/png/blog/style.png"
 import Image from 'next/image'
 import Breadcrumbs from '../breadcrumbs'
 import { blogBreadcrumbs } from '@/data/breadcrumbs'
-import heroImg from "../../public/images/blog/blog-hero.png"
+import heroImg from "../../public/images/png/blog/blog-hero.png"
 import play from "../../public/images/svg/play.svg"
 import { blogHeroData } from '@/data/blogHeroDatas'
 

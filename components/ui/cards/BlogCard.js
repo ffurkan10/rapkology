@@ -12,7 +12,7 @@ const BlogCard = ({ blog }) => {
         <div className='flex flex-col gap-4 '>
             <div className='flex items-center gap-4'>
                 <div className='w-[35px] h-[35px]'>
-                    <Image src={trendPerson} alt={blog.title} width={35} height={35} className='w-full h-full rounded-lg' />
+                    <Image src={trendPerson} alt={blog.attributes.title} width={35} height={35} className='w-full h-full rounded-lg' />
                 </div>
                 <p className='text-white'>{blog.attributes?.authors[0]}</p>
             </div>

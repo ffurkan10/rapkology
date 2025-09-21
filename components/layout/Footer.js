@@ -1,10 +1,10 @@
 import React from 'react'
 import logo from "../../public/images/svg/rapkology-logo.svg"
-import facebook from "../../public/images/social/facebook.svg"
-import spotify from "../../public/images/social/spotify.svg"
-import discord from "../../public/images/social/discord.svg"
-import twitter from "../../public/images/social/twitter.svg"
-import youtube from "../../public/images/social/youtube.svg"
+import facebook from "../../public/images/svg/social/facebook.svg"
+import spotify from "../../public/images/svg/social/spotify.svg"
+import discord from "../../public/images/svg/social/discord.svg"
+import twitter from "../../public/images/svg/social/twitter.svg"
+import youtube from "../../public/images/svg/social/youtube.svg"
 import Image from 'next/image'
 import InputMail from '../elements/inputs/InputMail'
 import { navigation } from '@/data/navigation'
