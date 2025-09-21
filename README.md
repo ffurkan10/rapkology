@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Case Study - Rapkology
+Bu proje, verilen vaka çalışması kapsamında Next.js 14/15 kullanılarak geliştirilmiş responsive bir web uygulamasıdır.
+Uygulama masaüstü ve mobil cihazlarda tutarlı bir deneyim sunmakta, Figma tasarımlarına olabildiğince yakın bir arayüz ile hazırlanmıştır.
 
-## Getting Started
+## Özellikler
 
-First, run the development server:
+- Next.js 14/15 ile geliştirilmiştir.
+
+- **Responsive tasarım:** Masaüstü ve mobil cihazlarda optimize edilmiş arayüz.
+
+- **Figma uyumluluğu:** Görsel tasarım, sağlanan Figma prototipine maksimum benzerlikte uygulanmıştır.
+
+- **Swiper kütüphanesi:** Slider bileşenleri için kullanıldı.
+
+- **Mock Data (JSON):** Veriler doğrudan import edilerek komponentler içinde kullanılmıştır.
+
+- **Reusable Components:** Kart, liste ve layout yapıları modüler şekilde tasarlandı.
+
+- **SEO uyumu:** Next.js meta etiketleri ve next/head ile temel optimizasyon.
+
+## Kullanılan Özellikler
+
+- Next.js 14/15
+
+- React 18
+
+- Tailwind CSS (hızlı ve modern stil yönetimi için)
+
+- Swiper.js (carousel/slider alanları için)
+
+## Teknik Tercihler ve Gerekçeler
+
+- **Next.js:** Modern React ekosisteminde server-side rendering (SSR) ve static site generation (SSG) avantajları için tercih edildi.
+
+- **Tailwind CSS:** Hem hız hem de Figma tasarımlarına kolay uyarlama için kullanıldı.
+
+- **Swiper.js:** Native olmayan carousel yapılarında optimizasyon ve dokunmatik destek için.
+
+- **Mock Data Import:** Harici API yerine JSON verileri doğrudan import edilerek daha hızlı geliştirme sağlandı.
+
+## Dosya Yapısı
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+├── app/                  # Next.js 14/15 App Router sayfaları ve route yapısı
+├── components/           # Yeniden kullanılabilir React bileşenleri
+├── data/                 # Mock JSON data dosyaları
+├── public/               # Statik varlıklar (görseller, ikonlar, fontlar)
+├── .gitignore            # Git tarafından yok sayılacak dosyalar
+├── eslint.config.mjs     # ESLint yapılandırması
+├── jsconfig.json         # Import alias ve IntelliSense ayarları
+├── next.config.mjs       # Next.js özel ayarları
+├── package-lock.json     # Bağımlılıkların kilit dosyası
+├── package.json          # Proje bağımlılıkları ve scriptler
+├── postcss.config.mjs    # PostCSS yapılandırması
+└── README.md             # Proje dokümantasyonu
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Kurulum ve Çalıştırma
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Repoyu klonlayın
+git clone https://github.com/ffurkan10/rapkology.git
 
-## Learn More
+# Klasöre girin
+cd rapkology
 
-To learn more about Next.js, take a look at the following resources:
+# Bağımlılıkları yükleyin
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Geliştirme sunucusunu başlatın
+npm run dev
+```
+Tarayıcıda http://localhost:3000 adresinden ulaşabilirsiniz.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
